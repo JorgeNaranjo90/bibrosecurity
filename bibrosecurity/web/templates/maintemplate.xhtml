@@ -19,21 +19,21 @@
         <title><ui:insert name="Title"></ui:insert></title>
     </h:head>
     <h:body>
-        
-        <!-- Added the navtop in all page-->
-        <ui:include src="../navs/navtop.xhtml"></ui:include>
-        
-        <!-- This is a container seccion -->
-        <div class="container">
-            <ui:insert name="content"></ui:insert>
-        
-            <!-- Add the footer for page -->
-            <ui:include src="../footer/footer.xhtml"></ui:include>
-        
-        </div>
-        <!-- Scripts -->
-        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-        <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.1/js/bootstrap.min.js"></script>
-        <script src="../bootswatch/assets/js/bootswatch.js"></script>
+            <!-- Added the navtop in all page-->
+            <ui:include src="../navs/navtop.xhtml"></ui:include>
+        <h:form>
+            <!-- This is a container seccion -->
+            <div class="container">
+                <ui:insert name="content"></ui:insert>
+            </div>
+                <!-- Add the footer for page -->
+                <ui:include src="../footer/footer.xhtml"></ui:include>
+
+
+            <!-- Scripts -->
+            <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+            <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.1/js/bootstrap.min.js"></script>
+            <script src="../bootswatch/assets/js/bootswatch.js"></script>
+        </h:form>
     </h:body>
 </html>
